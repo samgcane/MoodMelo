@@ -1,7 +1,7 @@
-// app/sitemap.xml/route.js
+// app/sitemap.js
 import { format } from 'date-fns';
 
-export async function GET() {
+export default function sitemap() {
   const baseUrl = 'https://www.canecreative.co.uk';
   const today = format(new Date(), 'yyyy-MM-dd');
 
@@ -21,6 +21,7 @@ export async function GET() {
     },
   ];
 
+  // Generate XML for the sitemap
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       ${staticPages
@@ -38,9 +39,5 @@ export async function GET() {
     </urlset>
   `;
 
-  return new Response(sitemap, {
-    headers: {
-      'Content-Type': 'application/xml',
-    },
-  });
+  return sitemap; // Return the XML string
 }
