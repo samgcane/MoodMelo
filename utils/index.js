@@ -5,7 +5,6 @@ export const gradients = {
     yellow: ['#fff8db', '#fff0b8', '#ffe495', '#ffd97b', '#ffc84f', '#dba339', '#b78127', '#936118', '#7a4b10',],
     pink: ['#ffd8f2', '#ffb1ea', '#ff8aea', '#ff6df1', '#ff3dfe', '#cd2ddb', '#9d1fb7', '#731493', '#540b7a',],
 }
-// background: -webkit-linear-gradient(#4338ca, #818cf8);
 
 export const baseRating = {
     "0": 2, "1": 5, "2": 4, "3": 1, "4": 3,
