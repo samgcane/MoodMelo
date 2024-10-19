@@ -10,7 +10,7 @@ const fugaz = Fugaz_One({ subsets: ["latin"], weight: ['400'] });
 
 export const metadata = {
   title: "MoodMelo",
-  description: "Track your mood, every day of the year",
+  description: "MoodMelo is a next generation mood tracker which enables you to track your mood, every day of the year",
 };
 
 export default function RootLayout({ children }) {

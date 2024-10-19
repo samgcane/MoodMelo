@@ -12,14 +12,7 @@ export default function Logout() {
         return null
     }
 
-    if (pathname === '/') {
-        return (
-            <Link href={'/dashboard'}>
-                <Button text="Go to dashboard" />
-            </Link>
-        )
-    }
   return (
-    <Button text="Logout" clickHandler={logout}/>
+    <Button dark text="Logout" clickHandler={logout}/>
   )
 }
